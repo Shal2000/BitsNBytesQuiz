@@ -1,0 +1,80 @@
+@media (min-width: 992px) {
+  #header .nav-bar .navbar-collapse .navbar-nav .nav-item a {
+    padding-left: 30px;
+  }
+  .custom {
+    font-size: 15px;
+  }
+  #navbarNavDropdown {
+    position: relative;
+    left: 49%;
+  }
+}
+
+@media (max-width:992px) {
+  .custom {
+    width: 700px !important;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  #navbarNavDropdown {
+    background-color: #1E375A !important;
+  }
+  .dropdown-menu {
+    position: relative;
+    float: none;
+   
+  }
+  .dropdown-menu a {
+    color: #000;
+  }
+  .dropdown-menu a:hover {
+    color: #1E375A;
+  }
+  .heading {
+    font-size: 20px;
+  }
+  .welcome-content .greeting p {
+    font-size: 15px;
+  }
+  .welcome p {
+    font-size: 15px;
+    color: #000;
+  }
+  .welcome-hero .welocme-hero-text {
+    font-size: 13px;
+    animation: fade-in 2s ease-in;
+    color: #000;
+  }
+  .row > .footer-col {
+    margin-top: 40px !important;
+  }
+
+  footer {
+    height: 300px !important;
+  }
+  .quiz-heading {
+    font-size: 20px;
+  }
+  .custom {
+    width: 350px !important;
+    height: 60px !important;
+    font-size: 10px;
+  }
+
+  .question {
+    font-size: 15px;
+    font-weight: 25px;
+    color: #1E375A;
+  }
+}
+@media (max-width: 768px) {
+  .row > .footer-col {
+    margin-top: 30px !important;
+  }
+  .copyright {
+    font-size: 12px !important;
+  }
+}

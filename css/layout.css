@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+}
+body {
+  background-color: antiquewhite;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+
+#header .nav-bar {
+  padding: 10px;
+  background-color:  #1E375A !important;
+  width: 100%;
+  z-index: 9999;
+}
+
+#header .nav-bar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  font-size: 18px !important;
+}
+.dropdown-menu {
+  position: relative;
+  float: none;
+  background-color:  #1E375A !important;
+}
+.dropdown-menu a {
+  color: #fff;
+}
+.dropdown-menu a:hover {
+  color: #ffc107;
+}
+
+.logo {
+  color: #fff !important;
+  font-size: 20px;
+  font-weight: 800;
+  margin-left: 20px;
+}
+
+/* Welcome */
+@keyframes wavy {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.heading,
+.quiz-heading, .all-time-picks {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+ 
+  font-weight: bolder;
+  color:  #000;
+}
+.quiz-heading, .all-time-picks {
+  animation: wavy 1.5s linear infinite;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.welcome-bnb {
+  background-color:  #1E375A !important;
+}
+
+.welcome-content .greeting p {
+  font-size: 15px;
+}
+.welcome-hero {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 200px;
+}
+
+.welcome p {
+  font-size: 18px;
+  color:  #000;
+}
+.welcome-hero .welocme-hero-text {
+  font-size: 15px;
+  animation: fade-in 2s ease-in;
+  color: #fff;
+}
+
+.start-button,
+.finish, .news-btn, .register-btn {
+  border: 3px double #fff;
+  border-radius: 10px;
+  background-color:  #1E375A;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  width: 150px;
+  height: 45px;
+}
+
+.start-button:hover,
+.finish:hover, .news-btn:hover, .register-btn {
+  background-color: antiquewhite;
+  color: #000;
+  border: 3px double  #1E375A;
+}
+/* All-time picks */
+
+.hotpick {
+  padding: 25px;
+}
+#hotpick-links {
+  text-decoration: none !important;
+}
+.hotpick-col {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.hotpick-card {
+  border: 4px solid  #1E375A !important;
+}
+.hotpick-img {
+  height: 250px;
+  object-fit: cover;
+}
+.hotpick-title {
+  font-size: 15px !important;
+  font-weight: 800;
+  color: #000 !important;
+}
+.hotpick-text {
+  font-size: 12px !important;
+  color:  #1E375A !important;
+}
+
+/* footer */
+footer {
+  background-color:  #1E375A !important;
+}
+
+.footer-links,
+.socilmedai-link {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Add your desired styles for the footer links and social media links here */
+
+/* Example style for the copyright text */
+.copyright {
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(163, 163, 200, 0.747);
+}
+
+.footer-links {
+  border: 2px solid #000;
+  background-color: antiquewhite;
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  border-radius: 10px;
+  color: #000;
+  font-weight: 700;
+  padding-top: 2px;
+}
+
+.footer-links:hover {
+  background-color: bisque;
+}
+.footer-col {
+  position: relative;
+  align-items: center;
+}
+
+.footer-col h4 {
+  animation: wavy 2s linear infinite;
+  animation-fill-mode: both;
+  color: #fff;
+  font-style: italic;
+  font-weight: 700;
+  text-decoration: dotted !important;
+}
+.socilmedia-link {
+  padding-left: 15px;
+}
+.socilmedia-link .sm-img {
+  width: 30px;
+  transition: transform 0.3s ease;
+}
+
+.socilmedia-link .sm-img:hover {
+  transform: scale(1.2);
+}
+
+.copyright {
+  background-color:  #1E375A !important;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Quiz page */
+
+.question {
+  font-size: 20px;
+  font-weight: 25px;
+  color:  #1E375A;
+}
+
+.custom {
+  font-size: 17px;
+  background-color: #f4f4f4;
+  padding: 5px !important;
+  margin-top: 3px;
+  margin-right: 10px;
+  width: 1000px;
+  height: 50px;
+  border: 1px dotted #000;
+}
+.custom:hover {
+  border: 1px solid #000;
+}
+/* .custom-radio input[type="radio"] {
+  display: none;
+} */
+
+.custom-radio::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.question-no {
+  color: #673ab7;
+}
+
+/* register */
+
+.form {
+  border: 2px solid rgba(0, 0, 0, 0.747);
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin-top: 150px;
+}
+
+/* Score */
+.score {
+  width: 75%;
+  height: 300px;
+  margin: 0px auto;
+  padding-top: 50px;
+  background-color: #1E375A;
+ 
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.score-title {
+  font-size: 28px;
+  font-weight: 700;
+}
+.score-title,
+.score-mark,
+.note {
+  padding-top: 5px;
+  color: #fff;
+}
+
+.quiz-btn {
+  border: 3px double #fff;
+  border-radius: 10px;
+  background-color:  #1E375A;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+  height: 45px;
+  margin-bottom: 10px;
+}
+.quiz-btn:hover {
+  background-color: bisque;
+  color: #fff;
+  border: 3px double  #1E375A;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/* newsletter */
+.sub-title {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.news-info-title {
+  font-size: 28px;
+}
+
+/* login */
+
+.people {
+  font-size: 50px;
+  color: #E3E3E3;
+}
+
+.form {
+  border: 2px solid #1E375A;
+  border-radius: 15px;
+  width: 400px;
+  height: 400px;
+}
+
+.f_orm {
+  margin: 20px 10px;
+}
+
+.mb-3 #username,
+.mb-3 #password {
+  width: 314px;
+  height: 40px;
+}
+
+.login-btn {
+  outline: 0;
+  background: #E3E3E3;
+  width: 50%;
+  height: 45px;
+  border: 0;
+  padding: 12px;
+  border-top-left-radius: 3px;
+  color: #000;
+  font-size: 14px;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #1E375A;
+  color: #E3E3E3;
+}
+
+.login-title {
+  /* font-size: 20px; */
+  font-weight: bold;
+}
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: opacity 0.3s;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #777;
+}
