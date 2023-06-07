@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+/* header section */
+
+
+.heading {
+  margin: auto 30px;
+}
+
+.navbar-brand{
+  color: #af7657;
+}
+
+/* sidebar-section */
+.sidebar {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  padding: 10px 15px;
+  background-color: #E3E3E3;
+}
+
+.menu-links {
+  list-style-type: none;
+  margin-top: 62px;
+}
+
+.nav-links {
+  margin: 10px;
+  padding: 3px;
+}
+
+.nav-links a {
+  width: 100%;
+  height: 75%;
+  padding: 12px;
+  font-size: 13px;
+  text-decoration: none;
+  color: #af7657;
+  align-items: center;
+  border-radius: 6px;
+  transition: 0.5s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.menu-links li {
+  width: 120px;
+  height: 60px;
+  margin-top: 10px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+li i {
+  font-size: 20px;
+  align-items: center;
+}
+
+.menu-links li a:hover,
+.navbar li a:hover {
+  background-color: rgb(10, 27, 36);
+}
+
+.menu-links li a:hover .bi,
+.menu-links li a:hover #q,
+.menu-links li a:hover .navtext,
+.menu-links li a:hover .number,
+.navbar li a:hover {
+  color: #caf0f8;
+}
+
+.navtext {
+  padding-left: 5px;
+}
+
+.button {
+  margin-left: 25px;
+}
+
+.number {
+  width: 22px;
+  height: 17px;
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+  color: #e6f0e0;
+  background-color: rgba(58, 92, 139, 0.8078431373);
+}
+.col-lg-10{
+  background-color: #c0b7b3;
+}
+/* card-section */
+.row .card {
+  border-radius: 5px;
+  margin: 20px 30px;
+  background-color: #E3E3E3;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.card span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  background-color: #c1a5a5;
+  justify-content: center;
+}
+.card p{
+  color: #B97A57;
+}
+
+.row .card:hover {
+  box-shadow: 0 6px 10px #B97A57;
+  transition: 0.8s ease;
+}
+
+.card-body {
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.card-content :first-child {
+  font-size: 30px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+}/*# sourceMappingURL=main.css.map */
+

@@ -1,0 +1,14 @@
+.lead{
+    font-size: 2.25rem;
+    font-weight: 600;
+    /* border-bottom: 1px solid #000; */
+    color: #B97A57;
+    background-color: #E3E3E3
+
+}
+.table{
+    background-color: #E3E3E3;
+}
+.tb-2r td{
+    color: #B97A57;
+}

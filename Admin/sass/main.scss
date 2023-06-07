@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+$backColor:#E3E3E3;
+$textColor:#B97A57;
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color:$backColor;
+   
+   
+}
+
+/* header section */
+.navbar {
+    background-color: $backColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $textColor;    
+}

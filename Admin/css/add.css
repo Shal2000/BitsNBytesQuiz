@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #c0b7b3;
+}
+.container{
+    background-color: #B97A57;
+    width: 382px;
+    height: 539px;
+}
+form{
+    margin-top: 50px;
+}
+.answer_option{
+    padding-left: 70px;
+}
+.btn{
+    background-color: #f7de8ccf;
+    color: #723514;
+}
