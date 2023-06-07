@@ -1,5 +1,7 @@
 .lead{
-    font-size: 2.25rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 25px;
     font-weight: 600;
     /* border-bottom: 1px solid #000; */
     color: #B97A57;
@@ -11,4 +13,8 @@
 }
 .tb-2r td{
     color: #B97A57;
+}
+
+.navtext {
+    text-transform: uppercase;
 }

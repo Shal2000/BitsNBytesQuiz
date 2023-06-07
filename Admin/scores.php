@@ -31,7 +31,7 @@ $result = mysqli_query($db, $query);
 <body>
     <nav class="navbar navbar-light justify-content-center fs-3 mb-5">
         <div class="heading">
-            <span>Scores</span>
+            <span>Leaderboard</span>
         </div>
     </nav>
 

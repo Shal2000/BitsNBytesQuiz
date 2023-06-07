@@ -16,7 +16,7 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Admin page</title>
+  <title>Admin</title>
   <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
@@ -56,7 +56,7 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
             <li class="nav-links">
               <a href="scores.php">
                 <i class="bi bi-trophy-fill"></i>
-                <span class="navtext">Scores</span>
+                <span class="navtext">Leaderboard</span>
               </a>
             </li>
             <li class="nav-links">
@@ -100,7 +100,7 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
         <li class="nav-links">
           <a href="scores.php">
             <i class="bi bi-trophy-fill"></i>
-            <span class="navtext">Scores</span>
+            <span class="navtext">Leaderboard</span>
           </a>
         </li>
         <li class="nav-links">
@@ -126,7 +126,7 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
       <div class="row container mx-auto">
         <div class="card col-lg-3">
           <div class="card-content m-0 p-0 border-0">
-            <p class="head">quiz</p>
+            <p class="head">QUIZ</p>
           </div>
           <div class="card-body">
             <p>Total Quiz</p>
@@ -148,7 +148,7 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
         </div>
         <div class="card col-lg-3">
           <div class="card-content m-0 p-0 border-0">
-            <p class="head">Users</p>
+            <p class="head">USERS</p>
           </div>
           <div class="card-body">
             <p>Total Users</p>
@@ -255,6 +255,30 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
             <span class="material-symbols-outlined">javascript</span>
           </div>
         </div>
+      </div>
+      <div class="row container mx-auto">
+        <div class="card col-lg-3">
+          <div class="card-content m-0 p-0 border-0">
+            <p class="head">General Knowledge</p>
+          </div>
+          <div class="card-body">
+            <p>Total</p>
+            <?php
+            include("../Admin/connection/connect.php");
+            $sql = "SELECT `question_id` FROM `questions` WHERE `quiz_id` = 5;";
+            $result = mysqli_query($db, $sql);
+            if ('count($result)') {
+
+              $rowCount = mysqli_num_rows($result);
+            ?>
+              <p><?php echo $rowCount; ?></p>
+            <?php
+            }
+            ?>
+            <span class="material-symbols-outlined">css</span>
+          </div>
+        </div>
+        
       </div>
       <!--leaderboard section-->
       <div class="row container mx-auto">
